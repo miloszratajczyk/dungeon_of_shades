@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dihbx8guggscm"]
+
+[ext_resource type="Script" path="res://scripts/attacks/spider_web.gd" id="1_bynio"]
+[ext_resource type="Texture2D" uid="uid://bciquvls5jvmj" path="res://sprites/attacks/spider_web.png" id="2_wdk05"]
+[ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_6usjs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n5ter"]
+radius = 8.06226
+
+[node name="SpiderWeb" type="Area2D"]
+scale = Vector2(1e-05, 1e-05)
+collision_layer = 4
+collision_mask = 9
+script = ExtResource("1_bynio")
+
+[node name="View" type="Sprite2D" parent="."]
+texture = ExtResource("2_wdk05")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_n5ter")
+
+[node name="Destroyable" parent="." instance=ExtResource("3_6usjs")]

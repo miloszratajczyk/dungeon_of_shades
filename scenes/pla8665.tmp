@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://bgtk7k5t1f5jf"]
+
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_vhnjp"]
+[ext_resource type="PackedScene" uid="uid://dobwlmyr5rvs6" path="res://scenes/dash.tscn" id="2_42ger"]
+[ext_resource type="Script" path="res://scripts/View.gd" id="3_x1jjs"]
+[ext_resource type="Texture2D" uid="uid://bryg5rk3tyux5" path="res://player_test.png" id="4_3f42l"]
+[ext_resource type="Script" path="res://scripts/Shoot.gd" id="5_k8p7d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7itkv"]
+radius = 8.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_vhnjp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7itkv")
+
+[node name="Dash" parent="." instance=ExtResource("2_42ger")]
+
+[node name="View" type="Node2D" parent="."]
+script = ExtResource("3_x1jjs")
+
+[node name="TestView" type="Sprite2D" parent="View"]
+modulate = Color(0, 0.211765, 1, 1)
+z_index = 1
+texture = ExtResource("4_3f42l")
+
+[node name="Shoot" type="Node" parent="."]
+script = ExtResource("5_k8p7d")

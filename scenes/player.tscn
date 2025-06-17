@@ -1,0 +1,46 @@
+[gd_scene load_steps=10 format=3 uid="uid://bgtk7k5t1f5jf"]
+
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_0vmop"]
+[ext_resource type="PackedScene" uid="uid://dobwlmyr5rvs6" path="res://scenes/dash.tscn" id="2_42ger"]
+[ext_resource type="Script" path="res://scripts/background.gd" id="2_w1gyg"]
+[ext_resource type="Script" path="res://scripts/player/view.gd" id="3_x1jjs"]
+[ext_resource type="Texture2D" uid="uid://cq1nlnyfbypbd" path="res://sprites/player/player_cape.png" id="4_id57y"]
+[ext_resource type="Texture2D" uid="uid://dja4aa3bfc1kw" path="res://sprites/player/player_hat.png" id="5_ev3yv"]
+[ext_resource type="Script" path="res://scripts/player/shoot.gd" id="5_k8p7d"]
+[ext_resource type="Texture2D" uid="uid://c3n772nk5l74w" path="res://sprites/player/player_wand.png" id="6_ay2jg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7itkv"]
+radius = 8.0
+
+[node name="Player" type="CharacterBody2D" groups=["killable"]]
+collision_mask = 2
+script = ExtResource("1_0vmop")
+
+[node name="Background" type="ColorRect" parent="."]
+z_index = -1
+offset_left = -321.0
+offset_top = -187.0
+offset_right = 322.0
+offset_bottom = 190.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("2_w1gyg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7itkv")
+
+[node name="Dash" parent="." instance=ExtResource("2_42ger")]
+
+[node name="View" type="Node2D" parent="."]
+script = ExtResource("3_x1jjs")
+
+[node name="CapeView" type="Sprite2D" parent="View"]
+texture = ExtResource("4_id57y")
+
+[node name="HatView" type="Sprite2D" parent="View"]
+texture = ExtResource("5_ev3yv")
+
+[node name="WandView" type="Sprite2D" parent="View"]
+texture = ExtResource("6_ay2jg")
+
+[node name="Shoot" type="Node2D" parent="."]
+script = ExtResource("5_k8p7d")

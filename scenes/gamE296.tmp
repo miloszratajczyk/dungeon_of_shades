@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://bfamajoad33g8"]
+
+[ext_resource type="Texture2D" uid="uid://bryg5rk3tyux5" path="res://player_test.png" id="1_buva1"]
+[ext_resource type="Script" path="res://scenes/Player.gd" id="1_kfhpe"]
+[ext_resource type="Script" path="res://scenes/View.gd" id="3_oqvxf"]
+[ext_resource type="PackedScene" uid="uid://dobwlmyr5rvs6" path="res://scenes/dash.tscn" id="3_yyxhy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7itkv"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_kfhpe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("CircleShape2D_7itkv")
+
+[node name="Dash" parent="Player" instance=ExtResource("3_yyxhy")]
+
+[node name="View" type="Node2D" parent="Player"]
+script = ExtResource("3_oqvxf")
+
+[node name="test_view" type="Sprite2D" parent="Player/View"]
+texture = ExtResource("1_buva1")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dahlpajr1xq8y"]
+
+[ext_resource type="Script" path="res://scripts/drops/cake_drop.gd" id="1_riyar"]
+[ext_resource type="Texture2D" uid="uid://x476kuoy5bm2" path="res://sprites/drops/cake_drop.png" id="2_s5j8f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mgi1j"]
+radius = 8.0
+
+[node name="CakeDrop" type="Area2D"]
+script = ExtResource("1_riyar")
+
+[node name="View" type="Sprite2D" parent="."]
+texture = ExtResource("2_s5j8f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mgi1j")

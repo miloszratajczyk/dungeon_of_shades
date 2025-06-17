@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://yuiu18jk42kd"]
+
+[ext_resource type="Script" path="res://scripts/attacks/fly_bullet.gd" id="1_raumv"]
+[ext_resource type="Texture2D" uid="uid://cqamnh4f54cw4" path="res://sprites/attacks/fly_bullet.png" id="2_132ro"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cfpc8"]
+size = Vector2(12, 3)
+
+[node name="FlyBullet" type="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 3
+script = ExtResource("1_raumv")
+
+[node name="View" type="Sprite2D" parent="."]
+texture = ExtResource("2_132ro")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cfpc8")

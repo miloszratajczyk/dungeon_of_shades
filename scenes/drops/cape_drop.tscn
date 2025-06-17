@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn66i08idrns8"]
+
+[ext_resource type="Script" path="res://scripts/drops/cape_drop.gd" id="1_6vgft"]
+[ext_resource type="Texture2D" uid="uid://d6gfc3t67x3f" path="res://sprites/drops/cape_drop.png" id="2_gibjl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mgi1j"]
+radius = 8.0
+
+[node name="CapeDrop" type="Area2D"]
+script = ExtResource("1_6vgft")
+
+[node name="View" type="Sprite2D" parent="."]
+texture = ExtResource("2_gibjl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mgi1j")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfnc0evhjg2ob"]
+
+[ext_resource type="Script" path="res://scripts/enemies/fly.gd" id="1_iastg"]
+[ext_resource type="Texture2D" uid="uid://bvd7ru03rmuyj" path="res://sprites/enemies/fly.png" id="2_1812i"]
+[ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_cnwnu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yoay3"]
+radius = 5.0
+
+[node name="Fly" type="CharacterBody2D" groups=["killable"]]
+collision_layer = 8
+collision_mask = 11
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_iastg")
+
+[node name="View" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("2_1812i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yoay3")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Destroyable" parent="." instance=ExtResource("3_cnwnu")]

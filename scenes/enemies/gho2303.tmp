@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://chcvd8voqm7iw"]
+
+[ext_resource type="Script" path="res://scripts/Ghost.gd" id="1_fnfap"]
+[ext_resource type="Texture2D" uid="uid://bgpyn1amgeuqx" path="res://sprites/enemies/ghost.png" id="2_7fahv"]
+[ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_qp77x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yoay3"]
+radius = 5.0
+
+[node name="Ghost" type="CharacterBody2D" groups=["killable"]]
+position = Vector2(55, 48)
+collision_layer = 8
+collision_mask = 3
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_fnfap")
+
+[node name="View" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("2_7fahv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_yoay3")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Destroyable" parent="." instance=ExtResource("3_qp77x")]

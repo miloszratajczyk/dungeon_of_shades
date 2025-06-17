@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://c424vxcc4tvn0"]
+
+[ext_resource type="Script" path="res://scripts/enemies/cat.gd" id="1_jpos4"]
+[ext_resource type="Texture2D" uid="uid://beoro4ovl13yb" path="res://sprites/enemies/cat.png" id="2_2jkkl"]
+[ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_fciua"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yoay3"]
+radius = 5.0
+
+[node name="Cat" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 3
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_jpos4")
+
+[node name="View" type="Sprite2D" parent="."]
+texture = ExtResource("2_2jkkl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yoay3")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Destroyable" parent="." instance=ExtResource("3_fciua")]

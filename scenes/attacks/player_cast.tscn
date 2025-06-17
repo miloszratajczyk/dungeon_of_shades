@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7a2fo7ig0ny0"]
+
+[ext_resource type="Script" path="res://scripts/attacks/player/player_cast.gd" id="1_s1fv7"]
+[ext_resource type="Texture2D" uid="uid://dqpugu6t6fl0p" path="res://sprites/attacks/player/player_cast.png" id="2_eksde"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n5ter"]
+radius = 16.0
+
+[node name="PlayerCast" type="Area2D"]
+scale = Vector2(1e-05, 1e-05)
+collision_layer = 4
+collision_mask = 9
+script = ExtResource("1_s1fv7")
+
+[node name="View" type="Sprite2D" parent="."]
+texture = ExtResource("2_eksde")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_n5ter")

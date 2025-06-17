@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctspsjc76y58p"]
+
+[ext_resource type="Script" path="res://scripts/enemies/slime.gd" id="1_3rk3i"]
+[ext_resource type="Texture2D" uid="uid://mryx7rte0qr3" path="res://sprites/enemies/slime.png" id="2_ubn1h"]
+[ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_1l17l"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yoay3"]
+radius = 5.0
+
+[node name="Slime" type="CharacterBody2D" groups=["killable"]]
+position = Vector2(55, 48)
+collision_layer = 8
+collision_mask = 11
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_3rk3i")
+
+[node name="View" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("2_ubn1h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_yoay3")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Destroyable" parent="." instance=ExtResource("3_1l17l")]

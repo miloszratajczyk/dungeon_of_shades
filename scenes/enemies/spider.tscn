@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://co3u15goyogtt"]
+
+[ext_resource type="Script" path="res://scripts/enemies/spider.gd" id="1_6gm6l"]
+[ext_resource type="Texture2D" uid="uid://b8t2by74uo88a" path="res://sprites/enemies/spider.png" id="2_hlu68"]
+[ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_wcqc3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yoay3"]
+radius = 7.0
+
+[node name="Spider" type="CharacterBody2D" groups=["killable"]]
+collision_layer = 8
+collision_mask = 11
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_6gm6l")
+
+[node name="View" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("2_hlu68")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_yoay3")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Destroyable" parent="." instance=ExtResource("3_wcqc3")]

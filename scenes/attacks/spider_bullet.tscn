@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c337iv7k1l4in"]
+
+[ext_resource type="Script" path="res://scripts/attacks/spider_bullet.gd" id="1_dnngg"]
+[ext_resource type="Texture2D" uid="uid://dojy2m3x0ch2x" path="res://sprites/attacks/spider_bullet.png" id="2_waqxp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8sdgp"]
+radius = 4.0
+
+[node name="SpiderBullet" type="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 3
+script = ExtResource("1_dnngg")
+
+[node name="View" type="Sprite2D" parent="."]
+texture = ExtResource("2_waqxp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8sdgp")

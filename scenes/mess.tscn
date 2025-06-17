@@ -1,0 +1,79 @@
+[gd_scene load_steps=6 format=3 uid="uid://l71sieq564pl"]
+
+[ext_resource type="FontFile" uid="uid://pntlljl77f2n" path="res://fonts/Poco.ttf" id="1_de4mt"]
+[ext_resource type="Script" path="res://scripts/mess.gd" id="1_t1jil"]
+[ext_resource type="Texture2D" uid="uid://c7m0at6fdwwoe" path="res://sprites/mess/mess.png" id="2_xwx5d"]
+[ext_resource type="Texture2D" uid="uid://h3tgt437cskg" path="res://sprites/ui/tutorial.png" id="4_jk6vb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v350o"]
+atlas = ExtResource("2_xwx5d")
+region = Rect2(0, 0, 24, 24)
+
+[node name="Mess" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t1jil")
+
+[node name="Blur" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(960, 540)
+layout_mode = 0
+offset_left = -1003.0
+offset_top = -601.0
+offset_right = 917.0
+offset_bottom = 479.0
+scale = Vector2(1.08, 1.12)
+color = Color(0, 0, 0, 0.784314)
+
+[node name="Label" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -284.0
+offset_top = 152.0
+offset_right = 320.0
+offset_bottom = 247.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("1_de4mt")
+theme_override_font_sizes/normal_font_size = 15
+text = "Loading...
+"
+
+[node name="SkipLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 222.0
+offset_top = 162.0
+offset_right = 826.0
+offset_bottom = 257.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("1_de4mt")
+theme_override_font_sizes/normal_font_size = 10
+text = "Press F to continue.
+
+"
+
+[node name="View" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -312.0
+offset_top = 148.0
+offset_right = -288.0
+offset_bottom = 172.0
+texture = SubResource("AtlasTexture_v350o")
+
+[node name="TutorialView" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(336, 112)
+layout_mode = 0
+offset_left = -162.0
+offset_top = -80.0
+offset_right = 174.0
+offset_bottom = 32.0
+texture = ExtResource("4_jk6vb")
