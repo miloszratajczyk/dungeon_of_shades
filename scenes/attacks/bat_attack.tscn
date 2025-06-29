@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c1sogbo045ul8"]
 
-[ext_resource type="Script" path="res://scripts/attacks/bat_attack.gd" id="1_in6xw"]
+[ext_resource type="Script" uid="uid://duj3mwq16sosy" path="res://scripts/attacks/bat_attack.gd" id="1_in6xw"]
 [ext_resource type="Texture2D" uid="uid://bspe52qfp710j" path="res://sprites/attacks/bat_attack.png" id="2_85k73"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ewct"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dgilsv5ha7tuv"]
 
-[ext_resource type="Script" path="res://scripts/drops/key_drop.gd" id="1_8eivh"]
+[ext_resource type="Script" uid="uid://cgm33qqu3pstb" path="res://scripts/drops/key_drop.gd" id="1_8eivh"]
 [ext_resource type="Texture2D" uid="uid://htdjra2aurjn" path="res://sprites/drops/key_drop.png" id="2_xhw50"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mgi1j"]

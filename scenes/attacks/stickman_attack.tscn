@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://boihh65w5eqom"]
 
-[ext_resource type="Script" path="res://scripts/attacks/stickman_attack.gd" id="1_eilgc"]
+[ext_resource type="Script" uid="uid://b8fdnluusxdtq" path="res://scripts/attacks/stickman_attack.gd" id="1_eilgc"]
 [ext_resource type="Texture2D" uid="uid://7mlunbqauv6j" path="res://sprites/attacks/stickman_attack.png" id="2_me3q7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ewct"]

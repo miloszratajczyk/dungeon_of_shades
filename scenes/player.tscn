@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://bgtk7k5t1f5jf"]
 
-[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_0vmop"]
+[ext_resource type="Script" uid="uid://bv1ndgi6820u5" path="res://scripts/player/player.gd" id="1_0vmop"]
 [ext_resource type="PackedScene" uid="uid://dobwlmyr5rvs6" path="res://scenes/dash.tscn" id="2_42ger"]
-[ext_resource type="Script" path="res://scripts/background.gd" id="2_w1gyg"]
-[ext_resource type="Script" path="res://scripts/player/view.gd" id="3_x1jjs"]
+[ext_resource type="Script" uid="uid://hwfhq744anqb" path="res://scripts/background.gd" id="2_w1gyg"]
+[ext_resource type="Script" uid="uid://csdqfjq2p4buq" path="res://scripts/player/view.gd" id="3_x1jjs"]
 [ext_resource type="Texture2D" uid="uid://cq1nlnyfbypbd" path="res://sprites/player/player_cape.png" id="4_id57y"]
 [ext_resource type="Texture2D" uid="uid://dja4aa3bfc1kw" path="res://sprites/player/player_hat.png" id="5_ev3yv"]
-[ext_resource type="Script" path="res://scripts/player/shoot.gd" id="5_k8p7d"]
+[ext_resource type="Script" uid="uid://c67evdrfqv1qa" path="res://scripts/player/shoot.gd" id="5_k8p7d"]
 [ext_resource type="Texture2D" uid="uid://c3n772nk5l74w" path="res://sprites/player/player_wand.png" id="6_ay2jg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7itkv"]

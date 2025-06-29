@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cnxtuf3oqxk23"]
 
-[ext_resource type="Script" path="res://scripts/drops/life_drop.gd" id="1_30ep2"]
+[ext_resource type="Script" uid="uid://babsxxj3lvxqx" path="res://scripts/drops/life_drop.gd" id="1_30ep2"]
 [ext_resource type="Texture2D" uid="uid://bw74agskxpn3h" path="res://sprites/drops/life_drop.png" id="2_38kki"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mgi1j"]

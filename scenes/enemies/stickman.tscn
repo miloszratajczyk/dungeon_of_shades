@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ccdwqxiovypop"]
 
-[ext_resource type="Script" path="res://scripts/enemies/stickman.gd" id="1_6sqhg"]
+[ext_resource type="Script" uid="uid://rp4hxkygksgt" path="res://scripts/enemies/stickman.gd" id="1_6sqhg"]
 [ext_resource type="Texture2D" uid="uid://c1yqb58pnxjim" path="res://sprites/enemies/stickman.png" id="2_7bk6x"]
 [ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_c0qmc"]
 

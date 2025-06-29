@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://l71sieq564pl"]
 
 [ext_resource type="FontFile" uid="uid://pntlljl77f2n" path="res://fonts/Poco.ttf" id="1_de4mt"]
-[ext_resource type="Script" path="res://scripts/mess.gd" id="1_t1jil"]
+[ext_resource type="Script" uid="uid://c3ngdc3y17q21" path="res://scripts/mess.gd" id="1_t1jil"]
 [ext_resource type="Texture2D" uid="uid://c7m0at6fdwwoe" path="res://sprites/mess/mess.png" id="2_xwx5d"]
 [ext_resource type="Texture2D" uid="uid://h3tgt437cskg" path="res://sprites/ui/tutorial.png" id="4_jk6vb"]
 

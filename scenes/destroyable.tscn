@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://jylhfk42gct0"]
 
-[ext_resource type="Script" path="res://scripts/destroyable.gd" id="1_i0xnx"]
+[ext_resource type="Script" uid="uid://dhtr6ydplfmva" path="res://scripts/destroyable.gd" id="1_i0xnx"]
 
 [node name="Destroyable" type="Node"]
 script = ExtResource("1_i0xnx")

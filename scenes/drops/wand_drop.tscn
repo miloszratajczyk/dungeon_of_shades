@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dj3oa8bnp4mi2"]
 
-[ext_resource type="Script" path="res://scripts/drops/wand_drop.gd" id="1_gqv80"]
+[ext_resource type="Script" uid="uid://bre6djhxyyygx" path="res://scripts/drops/wand_drop.gd" id="1_gqv80"]
 [ext_resource type="Texture2D" uid="uid://3x20waxusmgv" path="res://sprites/drops/wand_drop.png" id="2_y8jhb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mgi1j"]

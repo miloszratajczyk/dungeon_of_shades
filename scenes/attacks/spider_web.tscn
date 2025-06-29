@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dihbx8guggscm"]
 
-[ext_resource type="Script" path="res://scripts/attacks/spider_web.gd" id="1_bynio"]
+[ext_resource type="Script" uid="uid://ccg6bxmxm40t8" path="res://scripts/attacks/spider_web.gd" id="1_bynio"]
 [ext_resource type="Texture2D" uid="uid://bciquvls5jvmj" path="res://sprites/attacks/spider_web.png" id="2_wdk05"]
 [ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_6usjs"]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bfnc0evhjg2ob"]
 
-[ext_resource type="Script" path="res://scripts/enemies/fly.gd" id="1_iastg"]
+[ext_resource type="Script" uid="uid://b3a3kf18cag6t" path="res://scripts/enemies/fly.gd" id="1_iastg"]
 [ext_resource type="Texture2D" uid="uid://bvd7ru03rmuyj" path="res://sprites/enemies/fly.png" id="2_1812i"]
 [ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_cnwnu"]
 

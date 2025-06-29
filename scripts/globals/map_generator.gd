@@ -31,7 +31,7 @@ func digPassage(point_a: Vector2i, point_b: Vector2i):
 	for y in range(mini(point_a.y, point_b.y), maxi(point_a.y, point_b.y) + 1):
 		map.append(Vector2i(point_b.x, y))
 
-func generate(tile_map: TileMap) -> Array[Vector2i]:
+func generate(tile_map: TileMapLayer) -> Array[Vector2i]:
 	var room_count = 16
 	map_max_x = 0
 	map_max_y = 0
@@ -74,11 +74,11 @@ func generate(tile_map: TileMap) -> Array[Vector2i]:
 		for y in range( - MAP_MARGIN, map_max_y + MAP_MARGIN):
 			var vec = Vector2i(x, y)
 			if map.has(vec):
-				tile_map.set_cell(0, vec, 0, Vector2i(10, 1))
+				tile_map.set_cell(vec, 0, Vector2i(10, 1))
 				
 			else:
 				vec_list.append(vec)
 				
-	tile_map.set_cells_terrain_connect(0, vec_list, 0, 0)
+	tile_map.set_cells_terrain_connect( vec_list, 0, 0)
 	
 	return map

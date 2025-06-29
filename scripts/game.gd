@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var tile_map: TileMap = get_node("Map")
+@onready var tile_map: TileMapLayer = get_node("Map")
 @onready var player := get_node("Player")
 @onready var cat := get_node("Cat")
 @onready var nav_region: NavigationRegion2D = get_node("NavigationRegion2D")

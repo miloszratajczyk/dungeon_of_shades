@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b6stweyltehmj"]
 
-[ext_resource type="Script" path="res://scripts/enemies/bat.gd" id="1_f5h4s"]
+[ext_resource type="Script" uid="uid://c5rw47vfglisa" path="res://scripts/enemies/bat.gd" id="1_f5h4s"]
 [ext_resource type="Texture2D" uid="uid://h7h1tvibqoib" path="res://sprites/enemies/bat.png" id="2_6m8et"]
 [ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="2_xaota"]
 

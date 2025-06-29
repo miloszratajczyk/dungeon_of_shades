@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://12dj2knrc351"]
 
-[ext_resource type="Script" path="res://scripts/enemies/crab.gd" id="1_n72m2"]
+[ext_resource type="Script" uid="uid://bijg1yvii1hx3" path="res://scripts/enemies/crab.gd" id="1_n72m2"]
 [ext_resource type="Texture2D" uid="uid://dwq1haxb270lj" path="res://sprites/enemies/crab.png" id="2_a8p3r"]
 [ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_pq5fo"]
 

@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://bg4cbuotxfury"]
 
-[ext_resource type="Script" path="res://scripts/ui/pause_menu.gd" id="1_ag888"]
+[sub_resource type="Resource" id="Resource_pu0qw"]
+metadata/__load_path__ = "res://scripts/ui/pause_menu.gd"
 
 [node name="PauseMenu" type="Control"]
 visible = false
@@ -10,7 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ag888")
+script = SubResource("Resource_pu0qw")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1

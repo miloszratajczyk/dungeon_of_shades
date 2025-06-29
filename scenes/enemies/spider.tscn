@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://co3u15goyogtt"]
 
-[ext_resource type="Script" path="res://scripts/enemies/spider.gd" id="1_6gm6l"]
+[ext_resource type="Script" uid="uid://55dxs6kgxn4g" path="res://scripts/enemies/spider.gd" id="1_6gm6l"]
 [ext_resource type="Texture2D" uid="uid://b8t2by74uo88a" path="res://sprites/enemies/spider.png" id="2_hlu68"]
 [ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_wcqc3"]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c424vxcc4tvn0"]
 
-[ext_resource type="Script" path="res://scripts/enemies/cat.gd" id="1_jpos4"]
+[ext_resource type="Script" uid="uid://donn18vf5xwih" path="res://scripts/enemies/cat.gd" id="1_jpos4"]
 [ext_resource type="Texture2D" uid="uid://beoro4ovl13yb" path="res://sprites/enemies/cat.png" id="2_2jkkl"]
 [ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_fciua"]
 

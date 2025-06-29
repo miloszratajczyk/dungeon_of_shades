@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://chcvd8voqm7iw"]
 
-[ext_resource type="Script" path="res://scripts/enemies/ghost.gd" id="1_qff2s"]
+[ext_resource type="Script" uid="uid://ebr2yhvbahj1" path="res://scripts/enemies/ghost.gd" id="1_qff2s"]
 [ext_resource type="Texture2D" uid="uid://bgpyn1amgeuqx" path="res://sprites/enemies/ghost.png" id="2_7fahv"]
 [ext_resource type="PackedScene" uid="uid://jylhfk42gct0" path="res://scenes/destroyable.tscn" id="3_qp77x"]
 
